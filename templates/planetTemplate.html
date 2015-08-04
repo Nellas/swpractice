@@ -1,0 +1,10 @@
+<div>
+    <h1>Planets</h1>
+</div>
+
+<div class="main-container">
+    <div class="charData" ng-repeat="planet in planetData" ng-class="{'even' : $index % 2 === 0}">
+        {{planet.name}}
+
+    </div>
+</div>

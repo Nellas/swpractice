@@ -1,0 +1,10 @@
+<div>
+    <h1>Characters</h1>
+</div>
+
+<div class="main-container">
+        <div class="charData" ng-repeat="char in charData" ng-class="{'even' : $index % 2 === 0}">
+        {{char.name}}
+
+    </div>
+</div>
