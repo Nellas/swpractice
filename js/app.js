@@ -7,7 +7,7 @@ var app = angular.module('swapp', ['ngRoute']).config(function($routeProvider) {
         })
 
         .when('/films', {
-            templateUrl: '/templates/filmsTemplate.html'
+            templateUrl: '/templates/filmsTemplate.html',
             controller: 'filmsCtrl'
         })
 
@@ -21,7 +21,7 @@ var app = angular.module('swapp', ['ngRoute']).config(function($routeProvider) {
             controller: 'planetCtrl'
         })
 
-        .when('species', {
+        .when('/species', {
             templateUrl: '/templates/speciesTemplate.html',
             controller: 'speciesCtrl'
         })
@@ -31,7 +31,7 @@ var app = angular.module('swapp', ['ngRoute']).config(function($routeProvider) {
             controller: 'shipCtrl'
         })
 
-        .when('vehicles', {
+        .when('/vehicles', {
             templateUrl: '/templates/vehiclesTemplate.html',
             controller: 'vehicleCtrl'
         })
