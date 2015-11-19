@@ -1,8 +1,52 @@
 * {
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 
 html, body {
     width: 100%;
-    height: 100%
+    height: 100%;
+    background: url(images/swbackground.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 70%;
+    height: 1200px;
+    background-color: transparent;
+}
+
+.nav-bar {
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-name {
+    width: auto;
+    color: white;
+    background-color: #816e00;
+    padding: 0 10px;
+}
+
+.nav-button {
+    width: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.nav-button:focus {
+    background-color: #777f00;
+}
+.nav-button:hover {
+    background-color: #777f00;
 }
