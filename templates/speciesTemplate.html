@@ -1,3 +1,7 @@
-<div>
-    <h1>Species</h1>
+<div class="view-container">
+    <h1 style="text-decoration: underline">Species</h1>
+    <div class="charData" ng-repeat="species in speciesData" ng-class="{'even' : $index % 2 === 0}">
+        {{species.name}}
+
+    </div>
 </div>

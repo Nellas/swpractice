@@ -31,6 +31,7 @@ html, body {
     color: white;
     background-color: #816e00;
     padding: 0 10px;
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
 }
 
 .nav-button {
@@ -49,4 +50,8 @@ html, body {
 }
 .nav-button:hover {
     background-color: #777f00;
+}
+
+.view-container {
+    margin-left: 5%;
 }

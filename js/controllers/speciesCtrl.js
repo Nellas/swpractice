@@ -1,3 +1,13 @@
-var app = angular.module('swaap').controller('speciesCtrl', function($scope, $routeParams, mainService) {
+var app = angular.module('swapp').controller('speciesCtrl', function($scope, $routeParams, mainService) {
+
+    $scope.getSpeciesData = function() {
+        mainService.getSpeciesData()
+            .then(function(response) {
+                $scope.speciesData = response;
+                console.log('From the Controller', response)
+            })
+    };
+
+    $scope.getSpeciesData();
 
 });

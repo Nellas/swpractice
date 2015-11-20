@@ -4,7 +4,7 @@ var app = angular.module('swapp').controller('characterCtrl', function($scope, $
         mainService.getCharData()
             .then(function(result) {
                 $scope.charData = result;
-                console.log(result);
+                console.log('From Controller', result);
             })
     };
 
